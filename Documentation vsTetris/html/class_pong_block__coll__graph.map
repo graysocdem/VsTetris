@@ -1,0 +1,10 @@
+<map id="PongBlock" name="PongBlock">
+<area shape="rect" id="node1" title="A PowerUp inheriting both from PowerUp and Block which represents a block bouncing diagonally across ..." alt="" coords="183,1239,382,1381"/>
+<area shape="rect" id="node2" href="$class_power_up.html" title="Parent class with solepurpose of containing a true virtual function that children classes have to ove..." alt="" coords="5,997,155,1095"/>
+<area shape="rect" id="node3" href="$class_block.html" title="Class responsible for handling falling blocks collision, position and movement." alt="" coords="179,916,387,1176"/>
+<area shape="rect" id="node4" title=" " alt="" coords="159,674,275,714"/>
+<area shape="rect" id="node5" href="$class_tile_handler.html" title="Class responsible for storing, drawing and removing tiles." alt="" coords="300,535,521,853"/>
+<area shape="rect" id="node6" title=" " alt="" coords="330,5,430,45"/>
+<area shape="rect" id="node7" href="$class_block_handler.html" title="Class responsible for handling a board&#39;s blocks&#39; generation, deletion and drawing." alt="" coords="401,95,612,472"/>
+<area shape="rect" id="node8" title=" " alt="" coords="411,1026,469,1066"/>
+</map>

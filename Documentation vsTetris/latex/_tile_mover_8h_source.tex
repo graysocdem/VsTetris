@@ -1,0 +1,28 @@
+\hypertarget{_tile_mover_8h_source}{}\doxysection{Tile\+Mover.\+h}
+\mbox{\hyperlink{_tile_mover_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef TILEMOVER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define TILEMOVER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}../Common/Common.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_power_up_8h}{PowerUp.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_tile_mover}{TileMover}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_power_up}{PowerUp}} \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_tile_mover_a71ebafdc23c170836c8efe839b931ad9}{\string~TileMover}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{protected}: }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_mover_a6ee7738b829f333e4635b3a30009da08}{swap}}(\mbox{\hyperlink{class_tile_handler}{TileHandler}}* \mbox{\hyperlink{class_tile_mover_a2b6c0e0ae30b80202fd5072ab9fb6182}{tileHandler}}, pair<int, int>) = 0;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{24     \mbox{\hyperlink{class_tile_handler}{TileHandler}}* \mbox{\hyperlink{class_tile_mover_a2b6c0e0ae30b80202fd5072ab9fb6182}{tileHandler}};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{30     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_tile_mover_ac636ac05f9f2ec5ba57b42e2f50ff834}{toGrid}}(\textcolor{keywordtype}{int} pixel) \textcolor{keyword}{const};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{36     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_tile_mover_abda5d6f46c6d0a198fdfaef80bc9d7d3}{toPixel}}(\textcolor{keywordtype}{int} grid) \textcolor{keyword}{const};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,41 @@
+\hypertarget{_pong_block_8h_source}{}\doxysection{Pong\+Block.\+h}
+\mbox{\hyperlink{_pong_block_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PONGBLOCK\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PONGBLOCK\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}../Common/Common.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_power_up_8h}{PowerUp.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../BlocksAndTiles/Handled/Block.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_pong_block}{PongBlock}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_power_up}{PowerUp}}, \textcolor{keyword}{public} \mbox{\hyperlink{class_block}{Block}} \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_pong_block_a064090394fcfa36c165bd0d44330f7df}{\string~PongBlock}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{19     \mbox{\hyperlink{class_pong_block}{PongBlock}}(\mbox{\hyperlink{class_board}{Board}}* reciever);}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pong_block_ab3ca4cc23879da079a15d98955eb0870}{apply}}(\mbox{\hyperlink{class_board}{Board}}* board);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pong_block_a5a7051adb0451892e71307250767c6c0}{move}}(std::string \textcolor{keyword}{const}\& \mbox{\hyperlink{class_pong_block_afefa4d564298087675087819980e7c26}{direction}});}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{36     std::string \mbox{\hyperlink{class_pong_block_afefa4d564298087675087819980e7c26}{direction}};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pong_block_a98d6136d195f85a5af2f55e876cbf007}{willLand}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{42     }
+\DoxyCodeLine{43 \textcolor{keyword}{private}:}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{bool} handleCollision(\mbox{\hyperlink{class_tile}{Tile}}* tile);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} switchDirection();    }
+\DoxyCodeLine{54 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{bool} canMoveDown(\mbox{\hyperlink{class_tile}{Tile}}* tile) \textcolor{keyword}{const};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{63     \textcolor{keywordtype}{bool} canMoveSide(\mbox{\hyperlink{class_tile}{Tile}}* tile) \textcolor{keyword}{const};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{68     \mbox{\hyperlink{class_block_handler}{BlockHandler}}* blockHandler;}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

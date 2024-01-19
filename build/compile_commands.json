@@ -1,0 +1,87 @@
+[
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/main.cc.o -c /home/martin/TDP005_liava796_oskan896/main.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/main.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/Board/Board.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/Board/Board.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/Board/Board.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/Board/LeftBoard.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/Board/LeftBoard.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/Board/LeftBoard.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/Board/RightBoard.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/Board/RightBoard.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/Board/RightBoard.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/Handled/Tile.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/Handled/Tile.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/Handled/Tile.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/Handled/Block.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/Handled/Block.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/Handled/Block.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/BlockHandler.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/BlockHandler.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/BlockHandler.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/TileHandler.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/TileHandler.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/BlocksAndTiles/TileHandler.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/States/Game.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/States/Game.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/States/Game.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/States/GameState.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/States/GameState.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/States/GameState.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/PowerUp/TileMover.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/PowerUp/TileMover.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/PowerUp/TileMover.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/PowerUp/PowerUp.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/PowerUp/PowerUp.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/PowerUp/PowerUp.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/PowerUp/ReduceSpeed.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/PowerUp/ReduceSpeed.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/PowerUp/ReduceSpeed.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/PowerUp/SuperCharge.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/PowerUp/SuperCharge.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/PowerUp/SuperCharge.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/PowerUp/RowSwap.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/PowerUp/RowSwap.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/PowerUp/RowSwap.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/PowerUp/ColumnSwap.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/PowerUp/ColumnSwap.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/PowerUp/ColumnSwap.cc"
+},
+{
+  "directory": "/home/martin/TDP005_liava796_oskan896/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/vsTetris.dir/home/martin/TDP005_liava796_oskan896/Code/PowerUp/PongBlock.cc.o -c /home/martin/TDP005_liava796_oskan896/Code/PowerUp/PongBlock.cc",
+  "file": "/home/martin/TDP005_liava796_oskan896/Code/PowerUp/PongBlock.cc"
+}
+]

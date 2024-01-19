@@ -1,0 +1,25 @@
+\hypertarget{_row_swap_8h_source}{}\doxysection{Row\+Swap.\+h}
+\mbox{\hyperlink{_row_swap_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ROWSWAP\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ROWSWAP\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_tile_mover_8h}{TileMover.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_row_swap}{RowSwap}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_tile_mover}{TileMover}} \{}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:    }
+\DoxyCodeLine{11     \mbox{\hyperlink{class_row_swap_a994d3b0bc0fe0cab89d69d4e26886729}{\string~RowSwap}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_row_swap_a0b97f826b7911a5661f7b0882449f274}{apply}}(\mbox{\hyperlink{class_board}{Board}}* board);}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{24     \textcolor{keywordtype}{int} getLowerBound(\mbox{\hyperlink{class_tile_handler}{TileHandler}}* \mbox{\hyperlink{class_tile_mover_a2b6c0e0ae30b80202fd5072ab9fb6182}{tileHandler}}) \textcolor{keyword}{const};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{30     std::pair<int, int> setRandom(\textcolor{keywordtype}{int} lowest) \textcolor{keyword}{const};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} swap(\mbox{\hyperlink{class_tile_handler}{TileHandler}}* \mbox{\hyperlink{class_tile_mover_a2b6c0e0ae30b80202fd5072ab9fb6182}{tileHandler}}, pair<int, int> rowGrid) \textcolor{keyword}{override};}
+\DoxyCodeLine{38 \};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

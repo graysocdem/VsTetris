@@ -1,0 +1,10 @@
+<map id="RightBoard" name="RightBoard">
+<area shape="rect" id="node1" title=" " alt="" coords="325,1445,498,1529"/>
+<area shape="rect" id="node2" href="$class_board.html" title="Parent class responsible for handling player data, position and drawing itself." alt="" coords="301,916,522,1396"/>
+<area shape="rect" id="node3" title=" " alt="" coords="43,5,143,45"/>
+<area shape="rect" id="node5" href="$class_tile_handler.html" title="Class responsible for storing, drawing and removing tiles." alt="" coords="79,535,301,853"/>
+<area shape="rect" id="node6" href="$class_block_handler.html" title="Class responsible for handling a board&#39;s blocks&#39; generation, deletion and drawing." alt="" coords="130,95,341,472"/>
+<area shape="rect" id="node4" href="$class_game_state.html" title="A class that is responsible for handling the gameloop and player inputs through the keyboard." alt="" coords="325,652,498,736"/>
+<area shape="rect" id="node7" title=" " alt="" coords="523,674,583,714"/>
+<area shape="rect" id="node8" title=" " alt="" coords="607,674,677,714"/>
+</map>

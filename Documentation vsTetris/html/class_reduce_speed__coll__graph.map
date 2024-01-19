@@ -1,0 +1,4 @@
+<map id="ReduceSpeed" name="ReduceSpeed">
+<area shape="rect" id="node1" title="Class with it&#39;s own apply function meant to decrement a boards tickspeed." alt="" coords="5,152,195,236"/>
+<area shape="rect" id="node2" href="$class_power_up.html" title="Parent class with solepurpose of containing a true virtual function that children classes have to ove..." alt="" coords="25,5,175,104"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="Game" name="Game">
+<area shape="rect" id="node1" title="A class with the sole function of generating new states." alt="" coords="5,5,100,75"/>
+</map>

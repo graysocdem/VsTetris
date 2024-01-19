@@ -1,0 +1,3 @@
+/home/martin/TDP005_liava796_oskan896/build/CMakeFiles/rebuild_cache.dir
+/home/martin/TDP005_liava796_oskan896/build/CMakeFiles/edit_cache.dir
+/home/martin/TDP005_liava796_oskan896/build/CMakeFiles/vsTetris.dir

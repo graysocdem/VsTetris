@@ -1,0 +1,4 @@
+<map id="Block" name="Block">
+<area shape="rect" id="node1" title="Class responsible for handling falling blocks collision, position and movement." alt="" coords="5,5,213,295"/>
+<area shape="rect" id="node2" href="$class_pong_block.html" title="A PowerUp inheriting both from PowerUp and Block which represents a block bouncing diagonally across ..." alt="" coords="10,343,209,500"/>
+</map>

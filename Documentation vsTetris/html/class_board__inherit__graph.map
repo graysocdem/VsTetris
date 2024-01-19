@@ -1,0 +1,6 @@
+<map id="Board" name="Board">
+<area shape="rect" id="node1" title="Parent class responsible for handling player data, position and drawing itself." alt="" coords="73,93,294,632"/>
+<area shape="rect" id="node3" href="$class_left_board.html" title=" " alt="" coords="5,680,169,764"/>
+<area shape="rect" id="node4" href="$class_right_board.html" title=" " alt="" coords="194,680,367,764"/>
+<area shape="rect" id="node2" title=" " alt="" coords="133,5,233,45"/>
+</map>

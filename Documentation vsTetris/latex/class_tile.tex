@@ -1,0 +1,186 @@
+\hypertarget{class_tile}{}\doxysection{Tile Class Reference}
+\label{class_tile}\index{Tile@{Tile}}
+
+
+Class responsible for information in idividuall tiles.  
+
+
+
+
+{\ttfamily \#include $<$Tile.\+h$>$}
+
+
+
+Inheritance diagram for Tile\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_tile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tile\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_tile__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tile_a6d9bed2b07f661a96ef8cd01e68071de}{Tile}} (Texture texture, float x, float y)
+\begin{DoxyCompactList}\small\item\em Contstructor that defining texture, x and y coordinate and instatiates y and x position.. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_ae8b1354babb3ecb189f19d282999582b}{draw}} (sf\+::\+Render\+Target \&window, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Function for key inputs that handles movement and powerup usage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_a38ad26663b7545c01850d23ed71d2a20}{move}} (std\+::string const \&direction)
+\begin{DoxyCompactList}\small\item\em Function that calls the addx() and addy() functions according to given direction string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_aa38e7a1cfccd7c92fc7b74d939cda5c1}{addX}} (int x)
+\begin{DoxyCompactList}\small\item\em Function that adds or subtracts the inparameter value to the position of the tile object aswell as update the sprite position with the sfml set\+Position() function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_abf112743f447e4926e0e4aef610b0ca8}{addY}} (int y)
+\begin{DoxyCompactList}\small\item\em Function that adds or subtracts the inparameter value to the position of the tile object aswell as update the sprite position with the sfml set\+Position() function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_a6defbd720b55a3d12f05499448caccc4}{setX}} (int x)
+\begin{DoxyCompactList}\small\item\em Function to to set the tile objects x position to given inparameter value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_a642048d08e273c1568db087c0d31f350}{setY}} (int y)
+\begin{DoxyCompactList}\small\item\em Function to to set the tile objects y position to given inparameter value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_tile_aaf9f0cf42f7cf88b3dce5039a44e620a}{position}}
+\begin{DoxyCompactList}\small\item\em Sfml float vector used to contain the x and y positon of the tile object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for information in idividuall tiles. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tile_a6d9bed2b07f661a96ef8cd01e68071de}\label{class_tile_a6d9bed2b07f661a96ef8cd01e68071de}} 
+\index{Tile@{Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{Tile()}{Tile()}}
+{\footnotesize\ttfamily Tile\+::\+Tile (\begin{DoxyParamCaption}\item[{Texture}]{texture,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Contstructor that defining texture, x and y coordinate and instatiates y and x position.. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tile_aa38e7a1cfccd7c92fc7b74d939cda5c1}\label{class_tile_aa38e7a1cfccd7c92fc7b74d939cda5c1}} 
+\index{Tile@{Tile}!addX@{addX}}
+\index{addX@{addX}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{addX()}{addX()}}
+{\footnotesize\ttfamily void Tile\+::addX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Function that adds or subtracts the inparameter value to the position of the tile object aswell as update the sprite position with the sfml set\+Position() function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,A} & integer variable to define the diffrence in x value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_abf112743f447e4926e0e4aef610b0ca8}\label{class_tile_abf112743f447e4926e0e4aef610b0ca8}} 
+\index{Tile@{Tile}!addY@{addY}}
+\index{addY@{addY}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{addY()}{addY()}}
+{\footnotesize\ttfamily void Tile\+::addY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Function that adds or subtracts the inparameter value to the position of the tile object aswell as update the sprite position with the sfml set\+Position() function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,A} & integer variable to define the diffrence in y value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_ae8b1354babb3ecb189f19d282999582b}\label{class_tile_ae8b1354babb3ecb189f19d282999582b}} 
+\index{Tile@{Tile}!draw@{draw}}
+\index{draw@{draw}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Tile\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{window,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const}
+
+
+
+Function for key inputs that handles movement and powerup usage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \&left\+Time,Variable} & that refrences left\+Board\textquotesingle{}s clock a sf\+::clock that is used to control the time intervall between inputs. \\
+\hline
+{\em \&right\+Time,Variable} & that refrences to the adress of a sf\+::clock that is used to control the time intervall between inputs. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_a38ad26663b7545c01850d23ed71d2a20}\label{class_tile_a38ad26663b7545c01850d23ed71d2a20}} 
+\index{Tile@{Tile}!move@{move}}
+\index{move@{move}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Tile\+::move (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{direction }\end{DoxyParamCaption})}
+
+
+
+Function that calls the addx() and addy() functions according to given direction string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction,A} & two char string that symbolise boardside,movedirection. leftboard , left key input = LL. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_a6defbd720b55a3d12f05499448caccc4}\label{class_tile_a6defbd720b55a3d12f05499448caccc4}} 
+\index{Tile@{Tile}!setX@{setX}}
+\index{setX@{setX}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Tile\+::setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Function to to set the tile objects x position to given inparameter value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,Integer} & variable to change the x position to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_a642048d08e273c1568db087c0d31f350}\label{class_tile_a642048d08e273c1568db087c0d31f350}} 
+\index{Tile@{Tile}!setY@{setY}}
+\index{setY@{setY}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Tile\+::setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Function to to set the tile objects y position to given inparameter value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,Integer} & variable to change the y position to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tile_aaf9f0cf42f7cf88b3dce5039a44e620a}\label{class_tile_aaf9f0cf42f7cf88b3dce5039a44e620a}} 
+\index{Tile@{Tile}!position@{position}}
+\index{position@{position}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Tile\+::position}
+
+
+
+Sfml float vector used to contain the x and y positon of the tile object. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_tile_8h}{Tile.\+h}}\item 
+\mbox{\hyperlink{_tile_8cc}{Tile.\+cc}}\end{DoxyCompactItemize}

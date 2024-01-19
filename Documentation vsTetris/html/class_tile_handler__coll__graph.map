@@ -1,0 +1,5 @@
+<map id="TileHandler" name="TileHandler">
+<area shape="rect" id="node1" title="Class responsible for storing, drawing and removing tiles." alt="" coords="5,535,227,853"/>
+<area shape="rect" id="node2" title=" " alt="" coords="61,5,161,45"/>
+<area shape="rect" id="node3" href="$class_block_handler.html" title="Class responsible for handling a board&#39;s blocks&#39; generation, deletion and drawing." alt="" coords="132,95,343,472"/>
+</map>

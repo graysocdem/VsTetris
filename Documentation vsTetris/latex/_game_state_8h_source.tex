@@ -1,0 +1,50 @@
+\hypertarget{_game_state_8h_source}{}\doxysection{Game\+State.\+h}
+\mbox{\hyperlink{_game_state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef GAMESTATE\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define GAMESTATE\_H}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../Common/Common.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}../Board/Board.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../Board/RightBoard.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}../Board/LeftBoard.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}../PowerUp/PowerUp.h"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../PowerUp/SuperCharge.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}../PowerUp/ReduceSpeed.h"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../PowerUp/PongBlock.h"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../PowerUp/ColumnSwap.h"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}../PowerUp/RowSwap.h"{}}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{class_game_state}{GameState}} \{}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_game_state_a772fc96a88bbccd34236ba9a7ea33d60}{\string~GameState}}() = \textcolor{keywordflow}{default}; }
+\DoxyCodeLine{25 }
+\DoxyCodeLine{29     \mbox{\hyperlink{class_game_state_a4fa0a2bf50315c4a35a3890a0adcee5c}{GameState}}();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_state_a900313eb102c9466e80903a654b7ee3e}{run}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{private}:}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{41     \mbox{\hyperlink{class_left_board}{LeftBoard}}* leftBoard;}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{46     \mbox{\hyperlink{class_right_board}{RightBoard}}* rightBoard;}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 }
+\DoxyCodeLine{52     Texture texture;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{57     Sprite background;}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} draw(sf::RenderTarget \&window, sf::RenderStates states) \textcolor{keyword}{const};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} handleInput(sf::Clock \&leftTime, sf::Clock \&rightTime);}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} applyPowerUp(\mbox{\hyperlink{class_board}{Board}}* applier);}
+\DoxyCodeLine{78 \};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

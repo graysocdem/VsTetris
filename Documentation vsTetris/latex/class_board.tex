@@ -1,0 +1,359 @@
+\hypertarget{class_board}{}\doxysection{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+
+
+Parent class responsible for handling player data, position and drawing itself.  
+
+
+
+
+{\ttfamily \#include $<$Board.\+h$>$}
+
+
+
+Inheritance diagram for Board\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_board__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Board\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_board__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_board_af73f45730119a1fd8f6670f53f959e68}{$\sim$\+Board}} ()
+\item 
+\mbox{\hyperlink{class_board_ab2205940b6e6dee34b2670c2dd784e19}{Board}} (int \mbox{\hyperlink{class_board_a5e16b7e2243a7abce2d453f95a3134ac}{id}}, float x, float y, \mbox{\hyperlink{class_game_state}{Game\+State}} $\ast$\mbox{\hyperlink{class_board_a8266be1e63ffdb9bacd6b513d17f6e0d}{game\+State}}, int \mbox{\hyperlink{class_board_a28569804b88aa6f5625b04e606770a46}{x\+Offset}}, int \mbox{\hyperlink{class_board_abf56f0056e1c508a649a54fcd333097e}{y\+Offset}})
+\begin{DoxyCompactList}\small\item\em Constructor that instatiates it\textquotesingle{}s own \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} class and defines it\textquotesingle{}s id, power\+Up\+Points, x position, y position aswell as x,y coordinate offsets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_aceff44dc3715c392294c33702793e37c}{update}} (sf\+::\+Clock \&clock)
+\begin{DoxyCompactList}\small\item\em Destructor for virtual class \mbox{\hyperlink{class_board}{Board}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_a2607711861145912b49de69efed340b9}{move}} (string move\+Input)
+\begin{DoxyCompactList}\small\item\em Function that calls Tile\+Handlers move function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_ad046485e911de9967e7b9764a9516197}{get\+Power\+Up\+Points}} ()
+\begin{DoxyCompactList}\small\item\em Function that returns the boards private variable power\+Up\+Points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_a01f7ed0ac6911a64df7b8465b6ec44cd}{set\+Power\+Up\+Points}} (int power\+Up\+Points\+New\+Value)
+\begin{DoxyCompactList}\small\item\em Function that sets private variable power\+Up\+Points to given value in parameter. \end{DoxyCompactList}\item 
+sf\+::\+Time \& \mbox{\hyperlink{class_board_aee408db89f2857299f0d1b3953735d9c}{get\+Time\+Between\+Ticks\+Reference}} ()
+\begin{DoxyCompactList}\small\item\em Function that returns the value of private variable time\+Between\+Ticks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_block_handler}{Block\+Handler}} $\ast$ \mbox{\hyperlink{class_board_ae300663e975d057f087063275b2ae223}{get\+Block\+Handler}} () const
+\begin{DoxyCompactList}\small\item\em Function that calls Tile\+Handlers get\+Block\+Handler\+Function() to return a pointer of \mbox{\hyperlink{class_block_handler}{Block\+Handler}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} $\ast$ \mbox{\hyperlink{class_board_af37004df1924460427fdfe62fe4256fe}{get\+Tile\+Handler}} () const
+\begin{DoxyCompactList}\small\item\em Function that returns a pointer to instatiated \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_abcacb2733e8301c8e8a1cc9d8e79de0e}{get\+XOffset}} () const
+\begin{DoxyCompactList}\small\item\em returns value of protected variable x\+Offset. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_ace7d9d53e391d9c2594628bd57b0a172}{get\+YOffset}} () const
+\begin{DoxyCompactList}\small\item\em returns value of private variable y\+Offset. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a73a9f75dfe48c3fca68b412667ffca37}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Returns value of protected variable id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_board_a946848e416fa8f99becc302337b3a775}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Virtual function that draws drawable objects to the render target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_board_a28569804b88aa6f5625b04e606770a46}{x\+Offset}}
+\begin{DoxyCompactList}\small\item\em Variable that stores the x\+Offset as a integer. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{class_board_abf56f0056e1c508a649a54fcd333097e}{y\+Offset}}
+\item 
+int \mbox{\hyperlink{class_board_a16a3185c51300e945d2d99741498b549}{power\+Up\+Points}}
+\item 
+const int \mbox{\hyperlink{class_board_a5e16b7e2243a7abce2d453f95a3134ac}{id}}
+\begin{DoxyCompactList}\small\item\em Variable that stores the power\+Up\+Points as ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_state}{Game\+State}} $\ast$ \mbox{\hyperlink{class_board_a8266be1e63ffdb9bacd6b513d17f6e0d}{game\+State}}
+\begin{DoxyCompactList}\small\item\em Pointer variable to the instatiated \mbox{\hyperlink{class_game_state}{Game\+State}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} $\ast$ \mbox{\hyperlink{class_board_abad81ace1c1f0763e8c82a0be67e718e}{tile\+Handler}}
+\begin{DoxyCompactList}\small\item\em Pointer variable to the instatiated Game\+Handler object. \end{DoxyCompactList}\item 
+sf\+::\+Time \mbox{\hyperlink{class_board_a0edb4f3f27737e5ea4637797b41b4e53}{time\+Between\+Ticks}}
+\begin{DoxyCompactList}\small\item\em Represent\textquotesingle{}s the board\textquotesingle{}s tickspeed. \end{DoxyCompactList}\item 
+const sf\+::\+Vector2f \mbox{\hyperlink{class_board_a2f32e8cad1acde897309eb2a516fd770}{position}}
+\begin{DoxyCompactList}\small\item\em Variable that stores two floats in a sfml vector. \end{DoxyCompactList}\item 
+Sprite \mbox{\hyperlink{class_board_a1f1c133c63c9e4af2fb0d81c94b70534}{sprite}}
+\begin{DoxyCompactList}\small\item\em Sfml variable responsible for storing graphics. \end{DoxyCompactList}\item 
+Texture \mbox{\hyperlink{class_board_ab988047d963507a685ae27fd8c25ce61}{texture}}
+\begin{DoxyCompactList}\small\item\em Variable storing a sfml drawable representation of a given texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parent class responsible for handling player data, position and drawing itself. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_board_af73f45730119a1fd8f6670f53f959e68}\label{class_board_af73f45730119a1fd8f6670f53f959e68}} 
+\index{Board@{Board}!````~Board@{$\sim$Board}}
+\index{````~Board@{$\sim$Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{$\sim$Board()}{~Board()}}
+{\footnotesize\ttfamily Board\+::$\sim$\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_board_ab2205940b6e6dee34b2670c2dd784e19}\label{class_board_ab2205940b6e6dee34b2670c2dd784e19}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{\mbox{\hyperlink{class_game_state}{Game\+State}} $\ast$}]{game\+State,  }\item[{int}]{x\+Offset,  }\item[{int}]{y\+Offset }\end{DoxyParamCaption})}
+
+
+
+Constructor that instatiates it\textquotesingle{}s own \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} class and defines it\textquotesingle{}s id, power\+Up\+Points, x position, y position aswell as x,y coordinate offsets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id,A} & integer used for storing player number. \\
+\hline
+{\em x,A} & float that signifies the boards it\textquotesingle{}s x coordinate. \\
+\hline
+{\em y,A} & float that signifies the boards it\textquotesingle{}s y coordinate. \\
+\hline
+{\em game\+State,A} & pointer variable to the \mbox{\hyperlink{class_game_state}{Game\+State}} class. \\
+\hline
+{\em x\+Offset,A} & variable that stores the x offset pixel coordinate for the board. \\
+\hline
+{\em y\+Offset,A} & variable that stores the x offset pixel coordinate for the board. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_a946848e416fa8f99becc302337b3a775}\label{class_board_a946848e416fa8f99becc302337b3a775}} 
+\index{Board@{Board}!draw@{draw}}
+\index{draw@{draw}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Board\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Virtual function that draws drawable objects to the render target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \&window,A} & reference to the SFML object window \\
+\hline
+{\em states} & Required parameter to properly use sf\+::\+Drawable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_ae300663e975d057f087063275b2ae223}\label{class_board_ae300663e975d057f087063275b2ae223}} 
+\index{Board@{Board}!getBlockHandler@{getBlockHandler}}
+\index{getBlockHandler@{getBlockHandler}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getBlockHandler()}{getBlockHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_block_handler}{Block\+Handler}} $\ast$ Board\+::get\+Block\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Function that calls Tile\+Handlers get\+Block\+Handler\+Function() to return a pointer of \mbox{\hyperlink{class_block_handler}{Block\+Handler}}. 
+
+\mbox{\Hypertarget{class_board_a73a9f75dfe48c3fca68b412667ffca37}\label{class_board_a73a9f75dfe48c3fca68b412667ffca37}} 
+\index{Board@{Board}!getID@{getID}}
+\index{getID@{getID}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily int Board\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns value of protected variable id. 
+
+\mbox{\Hypertarget{class_board_ad046485e911de9967e7b9764a9516197}\label{class_board_ad046485e911de9967e7b9764a9516197}} 
+\index{Board@{Board}!getPowerUpPoints@{getPowerUpPoints}}
+\index{getPowerUpPoints@{getPowerUpPoints}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getPowerUpPoints()}{getPowerUpPoints()}}
+{\footnotesize\ttfamily int Board\+::get\+Power\+Up\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that returns the boards private variable power\+Up\+Points. 
+
+\mbox{\Hypertarget{class_board_af37004df1924460427fdfe62fe4256fe}\label{class_board_af37004df1924460427fdfe62fe4256fe}} 
+\index{Board@{Board}!getTileHandler@{getTileHandler}}
+\index{getTileHandler@{getTileHandler}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getTileHandler()}{getTileHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} $\ast$ Board\+::get\+Tile\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Function that returns a pointer to instatiated \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}}. 
+
+\mbox{\Hypertarget{class_board_aee408db89f2857299f0d1b3953735d9c}\label{class_board_aee408db89f2857299f0d1b3953735d9c}} 
+\index{Board@{Board}!getTimeBetweenTicksReference@{getTimeBetweenTicksReference}}
+\index{getTimeBetweenTicksReference@{getTimeBetweenTicksReference}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getTimeBetweenTicksReference()}{getTimeBetweenTicksReference()}}
+{\footnotesize\ttfamily sf\+::\+Time \& Board\+::get\+Time\+Between\+Ticks\+Reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that returns the value of private variable time\+Between\+Ticks. 
+
+\mbox{\Hypertarget{class_board_abcacb2733e8301c8e8a1cc9d8e79de0e}\label{class_board_abcacb2733e8301c8e8a1cc9d8e79de0e}} 
+\index{Board@{Board}!getXOffset@{getXOffset}}
+\index{getXOffset@{getXOffset}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getXOffset()}{getXOffset()}}
+{\footnotesize\ttfamily int Board\+::get\+XOffset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+returns value of protected variable x\+Offset. 
+
+\mbox{\Hypertarget{class_board_ace7d9d53e391d9c2594628bd57b0a172}\label{class_board_ace7d9d53e391d9c2594628bd57b0a172}} 
+\index{Board@{Board}!getYOffset@{getYOffset}}
+\index{getYOffset@{getYOffset}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getYOffset()}{getYOffset()}}
+{\footnotesize\ttfamily int Board\+::get\+YOffset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+returns value of private variable y\+Offset. 
+
+\mbox{\Hypertarget{class_board_a2607711861145912b49de69efed340b9}\label{class_board_a2607711861145912b49de69efed340b9}} 
+\index{Board@{Board}!move@{move}}
+\index{move@{move}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Board\+::move (\begin{DoxyParamCaption}\item[{string}]{move\+Input }\end{DoxyParamCaption})}
+
+
+
+Function that calls Tile\+Handlers move function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move\+Input,A} & two char string that symbolise boardside,movedirection. leftboard , left key input = LL. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_a01f7ed0ac6911a64df7b8465b6ec44cd}\label{class_board_a01f7ed0ac6911a64df7b8465b6ec44cd}} 
+\index{Board@{Board}!setPowerUpPoints@{setPowerUpPoints}}
+\index{setPowerUpPoints@{setPowerUpPoints}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{setPowerUpPoints()}{setPowerUpPoints()}}
+{\footnotesize\ttfamily void Board\+::set\+Power\+Up\+Points (\begin{DoxyParamCaption}\item[{int}]{power\+Up\+Points\+New\+Value }\end{DoxyParamCaption})}
+
+
+
+Function that sets private variable power\+Up\+Points to given value in parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em power\+Up\+Points\+New\+Value} & Integer value that power\+Up\+Points is set to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_aceff44dc3715c392294c33702793e37c}\label{class_board_aceff44dc3715c392294c33702793e37c}} 
+\index{Board@{Board}!update@{update}}
+\index{update@{update}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Board\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Clock \&}]{clock }\end{DoxyParamCaption})}
+
+
+
+Destructor for virtual class \mbox{\hyperlink{class_board}{Board}}. 
+
+Function that calls instatiated \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} update function. 
+\begin{DoxyParams}{Parameters}
+{\em \&clock,variable} & that is used to determine the the time intervall inbetween ticks, stored as the adress of a sf\+::clocks, \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_board_a8266be1e63ffdb9bacd6b513d17f6e0d}\label{class_board_a8266be1e63ffdb9bacd6b513d17f6e0d}} 
+\index{Board@{Board}!gameState@{gameState}}
+\index{gameState@{gameState}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_state}{Game\+State}}$\ast$ Board\+::game\+State\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pointer variable to the instatiated \mbox{\hyperlink{class_game_state}{Game\+State}} object. 
+
+\mbox{\Hypertarget{class_board_a5e16b7e2243a7abce2d453f95a3134ac}\label{class_board_a5e16b7e2243a7abce2d453f95a3134ac}} 
+\index{Board@{Board}!id@{id}}
+\index{id@{id}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily const int Board\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Variable that stores the power\+Up\+Points as ~\newline
+ 
+
+\mbox{\Hypertarget{class_board_a2f32e8cad1acde897309eb2a516fd770}\label{class_board_a2f32e8cad1acde897309eb2a516fd770}} 
+\index{Board@{Board}!position@{position}}
+\index{position@{position}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily const sf\+::\+Vector2f Board\+::position\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Variable that stores two floats in a sfml vector. 
+
+\mbox{\Hypertarget{class_board_a16a3185c51300e945d2d99741498b549}\label{class_board_a16a3185c51300e945d2d99741498b549}} 
+\index{Board@{Board}!powerUpPoints@{powerUpPoints}}
+\index{powerUpPoints@{powerUpPoints}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{powerUpPoints}{powerUpPoints}}
+{\footnotesize\ttfamily int Board\+::power\+Up\+Points\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_board_a1f1c133c63c9e4af2fb0d81c94b70534}\label{class_board_a1f1c133c63c9e4af2fb0d81c94b70534}} 
+\index{Board@{Board}!sprite@{sprite}}
+\index{sprite@{sprite}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily Sprite Board\+::sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sfml variable responsible for storing graphics. 
+
+\mbox{\Hypertarget{class_board_ab988047d963507a685ae27fd8c25ce61}\label{class_board_ab988047d963507a685ae27fd8c25ce61}} 
+\index{Board@{Board}!texture@{texture}}
+\index{texture@{texture}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily Texture Board\+::texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Variable storing a sfml drawable representation of a given texture. 
+
+\mbox{\Hypertarget{class_board_abad81ace1c1f0763e8c82a0be67e718e}\label{class_board_abad81ace1c1f0763e8c82a0be67e718e}} 
+\index{Board@{Board}!tileHandler@{tileHandler}}
+\index{tileHandler@{tileHandler}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{tileHandler}{tileHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}}$\ast$ Board\+::tile\+Handler\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pointer variable to the instatiated Game\+Handler object. 
+
+\mbox{\Hypertarget{class_board_a0edb4f3f27737e5ea4637797b41b4e53}\label{class_board_a0edb4f3f27737e5ea4637797b41b4e53}} 
+\index{Board@{Board}!timeBetweenTicks@{timeBetweenTicks}}
+\index{timeBetweenTicks@{timeBetweenTicks}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{timeBetweenTicks}{timeBetweenTicks}}
+{\footnotesize\ttfamily sf\+::\+Time Board\+::time\+Between\+Ticks\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Represent\textquotesingle{}s the board\textquotesingle{}s tickspeed. 
+
+\mbox{\Hypertarget{class_board_a28569804b88aa6f5625b04e606770a46}\label{class_board_a28569804b88aa6f5625b04e606770a46}} 
+\index{Board@{Board}!xOffset@{xOffset}}
+\index{xOffset@{xOffset}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{xOffset}{xOffset}}
+{\footnotesize\ttfamily const int Board\+::x\+Offset\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Variable that stores the x\+Offset as a integer. 
+
+\mbox{\Hypertarget{class_board_abf56f0056e1c508a649a54fcd333097e}\label{class_board_abf56f0056e1c508a649a54fcd333097e}} 
+\index{Board@{Board}!yOffset@{yOffset}}
+\index{yOffset@{yOffset}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{yOffset}{yOffset}}
+{\footnotesize\ttfamily const int Board\+::y\+Offset\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_board_8h}{Board.\+h}}\item 
+\mbox{\hyperlink{_board_8cc}{Board.\+cc}}\end{DoxyCompactItemize}

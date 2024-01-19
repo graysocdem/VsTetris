@@ -1,0 +1,122 @@
+\hypertarget{class_tile_mover}{}\doxysection{Tile\+Mover Class Reference}
+\label{class_tile_mover}\index{TileMover@{TileMover}}
+
+
+Parent class responsible for randomising numbers.  
+
+
+
+
+{\ttfamily \#include $<$Tile\+Mover.\+h$>$}
+
+
+
+Inheritance diagram for Tile\+Mover\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tile_mover__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tile\+Mover\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_tile_mover__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_tile_mover_a71ebafdc23c170836c8efe839b931ad9}{$\sim$\+Tile\+Mover}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_tile_mover_a6ee7738b829f333e4635b3a30009da08}{swap}} (\mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} $\ast$\mbox{\hyperlink{class_tile_mover_a2b6c0e0ae30b80202fd5072ab9fb6182}{tile\+Handler}}, pair$<$ int, int $>$)=0
+\begin{DoxyCompactList}\small\item\em Swaps two of something, either rows or columns. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_tile_mover_ac636ac05f9f2ec5ba57b42e2f50ff834}{to\+Grid}} (int pixel) const
+\begin{DoxyCompactList}\small\item\em Virtual function to convert sfml pixel coordinates to the programs specified coordinates. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_tile_mover_abda5d6f46c6d0a198fdfaef80bc9d7d3}{to\+Pixel}} (int grid) const
+\begin{DoxyCompactList}\small\item\em Virtual function to convert the programs specified coordinates to sfml pixel coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} $\ast$ \mbox{\hyperlink{class_tile_mover_a2b6c0e0ae30b80202fd5072ab9fb6182}{tile\+Handler}}
+\begin{DoxyCompactList}\small\item\em Pointer to \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parent class responsible for randomising numbers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tile_mover_a71ebafdc23c170836c8efe839b931ad9}\label{class_tile_mover_a71ebafdc23c170836c8efe839b931ad9}} 
+\index{TileMover@{TileMover}!````~TileMover@{$\sim$TileMover}}
+\index{````~TileMover@{$\sim$TileMover}!TileMover@{TileMover}}
+\doxysubsubsection{\texorpdfstring{$\sim$TileMover()}{~TileMover()}}
+{\footnotesize\ttfamily virtual Tile\+Mover\+::$\sim$\+Tile\+Mover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tile_mover_a6ee7738b829f333e4635b3a30009da08}\label{class_tile_mover_a6ee7738b829f333e4635b3a30009da08}} 
+\index{TileMover@{TileMover}!swap@{swap}}
+\index{swap@{swap}!TileMover@{TileMover}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily virtual void Tile\+Mover\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} $\ast$}]{tile\+Handler,  }\item[{pair$<$ int, int $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Swaps two of something, either rows or columns. 
+
+\mbox{\Hypertarget{class_tile_mover_ac636ac05f9f2ec5ba57b42e2f50ff834}\label{class_tile_mover_ac636ac05f9f2ec5ba57b42e2f50ff834}} 
+\index{TileMover@{TileMover}!toGrid@{toGrid}}
+\index{toGrid@{toGrid}!TileMover@{TileMover}}
+\doxysubsubsection{\texorpdfstring{toGrid()}{toGrid()}}
+{\footnotesize\ttfamily int Tile\+Mover\+::to\+Grid (\begin{DoxyParamCaption}\item[{int}]{pixel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Virtual function to convert sfml pixel coordinates to the programs specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel} & the pixel coordinate which is to be converted to board grid \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_mover_abda5d6f46c6d0a198fdfaef80bc9d7d3}\label{class_tile_mover_abda5d6f46c6d0a198fdfaef80bc9d7d3}} 
+\index{TileMover@{TileMover}!toPixel@{toPixel}}
+\index{toPixel@{toPixel}!TileMover@{TileMover}}
+\doxysubsubsection{\texorpdfstring{toPixel()}{toPixel()}}
+{\footnotesize\ttfamily int Tile\+Mover\+::to\+Pixel (\begin{DoxyParamCaption}\item[{int}]{grid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Virtual function to convert the programs specified coordinates to sfml pixel coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & the board grid coordinate which is to be converted to pixel \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tile_mover_a2b6c0e0ae30b80202fd5072ab9fb6182}\label{class_tile_mover_a2b6c0e0ae30b80202fd5072ab9fb6182}} 
+\index{TileMover@{TileMover}!tileHandler@{tileHandler}}
+\index{tileHandler@{tileHandler}!TileMover@{TileMover}}
+\doxysubsubsection{\texorpdfstring{tileHandler}{tileHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}}$\ast$ Tile\+Mover\+::tile\+Handler\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pointer to \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}}. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_tile_mover_8h}{Tile\+Mover.\+h}}\item 
+\mbox{\hyperlink{_tile_mover_8cc}{Tile\+Mover.\+cc}}\end{DoxyCompactItemize}

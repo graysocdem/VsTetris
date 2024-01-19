@@ -1,0 +1,80 @@
+\hypertarget{class_reduce_speed}{}\doxysection{Reduce\+Speed Class Reference}
+\label{class_reduce_speed}\index{ReduceSpeed@{ReduceSpeed}}
+
+
+Class with it\textquotesingle{}s own apply function meant to decrement a boards tickspeed.  
+
+
+
+
+{\ttfamily \#include $<$Reduce\+Speed.\+h$>$}
+
+
+
+Inheritance diagram for Reduce\+Speed\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_reduce_speed__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Reduce\+Speed\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_reduce_speed__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_reduce_speed_a418940102c67bfe7bae46e9ea38ebd44}{$\sim$\+Reduce\+Speed}} ()=default
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_reduce_speed_a589d1142bff7563ac606bcef253e557e}{apply}} (\mbox{\hyperlink{class_board}{Board}} $\ast$board) override
+\begin{DoxyCompactList}\small\item\em Function that decrements the tickspeed of a given board in the inparameter. Will not decrement a boards tickspeed further than 100 milliseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class with it\textquotesingle{}s own apply function meant to decrement a boards tickspeed. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_reduce_speed_a418940102c67bfe7bae46e9ea38ebd44}\label{class_reduce_speed_a418940102c67bfe7bae46e9ea38ebd44}} 
+\index{ReduceSpeed@{ReduceSpeed}!````~ReduceSpeed@{$\sim$ReduceSpeed}}
+\index{````~ReduceSpeed@{$\sim$ReduceSpeed}!ReduceSpeed@{ReduceSpeed}}
+\doxysubsubsection{\texorpdfstring{$\sim$ReduceSpeed()}{~ReduceSpeed()}}
+{\footnotesize\ttfamily Reduce\+Speed\+::$\sim$\+Reduce\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Class destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_reduce_speed_a589d1142bff7563ac606bcef253e557e}\label{class_reduce_speed_a589d1142bff7563ac606bcef253e557e}} 
+\index{ReduceSpeed@{ReduceSpeed}!apply@{apply}}
+\index{apply@{apply}!ReduceSpeed@{ReduceSpeed}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily void Reduce\+Speed\+::apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} $\ast$}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Function that decrements the tickspeed of a given board in the inparameter. Will not decrement a boards tickspeed further than 100 milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board,\mbox{\hyperlink{class_board}{Board}}} & pointer variable. Used to specify which boards tickspeed to decrement. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_power_up_a1518dd6128c24037a04788255927aa6a}{Power\+Up}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_reduce_speed_8h}{Reduce\+Speed.\+h}}\item 
+\mbox{\hyperlink{_reduce_speed_8cc}{Reduce\+Speed.\+cc}}\end{DoxyCompactItemize}

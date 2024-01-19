@@ -1,0 +1,145 @@
+\hypertarget{class_pong_block}{}\doxysection{Pong\+Block Class Reference}
+\label{class_pong_block}\index{PongBlock@{PongBlock}}
+
+
+A \mbox{\hyperlink{class_power_up}{Power\+Up}} inheriting both from \mbox{\hyperlink{class_power_up}{Power\+Up}} and \mbox{\hyperlink{class_block}{Block}} which represents a block bouncing diagonally across a board, colliding with both tile\+Handler\textquotesingle{}s tiles and current\+Block.  
+
+
+
+
+{\ttfamily \#include $<$Pong\+Block.\+h$>$}
+
+
+
+Inheritance diagram for Pong\+Block\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pong_block__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pong\+Block\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_pong_block__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pong_block_a064090394fcfa36c165bd0d44330f7df}{$\sim$\+Pong\+Block}} ()=default
+\item 
+\mbox{\hyperlink{class_pong_block_a0969cf1840cceab3a00d3d336c61b3a1}{Pong\+Block}} (\mbox{\hyperlink{class_board}{Board}} $\ast$reciever)
+\begin{DoxyCompactList}\small\item\em Pongblock\textquotesingle{}s constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pong_block_ab3ca4cc23879da079a15d98955eb0870}{apply}} (\mbox{\hyperlink{class_board}{Board}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Spawns a pongblock on a board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pong_block_a5a7051adb0451892e71307250767c6c0}{move}} (std\+::string const \&\mbox{\hyperlink{class_pong_block_afefa4d564298087675087819980e7c26}{direction}})
+\begin{DoxyCompactList}\small\item\em Handles pongblocks movement and collision handling. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pong_block_a98d6136d195f85a5af2f55e876cbf007}{will\+Land}} () const override
+\begin{DoxyCompactList}\small\item\em Checks if the pong\+Block will land the next tick. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_pong_block_afefa4d564298087675087819980e7c26}{direction}}
+\begin{DoxyCompactList}\small\item\em A string in the format \char`\"{}\+BD\char`\"{}, where B is the board the pongblock is on (L or R) and D is the direction it\textquotesingle{}s going (L or R). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_power_up}{Power\+Up}} inheriting both from \mbox{\hyperlink{class_power_up}{Power\+Up}} and \mbox{\hyperlink{class_block}{Block}} which represents a block bouncing diagonally across a board, colliding with both tile\+Handler\textquotesingle{}s tiles and current\+Block. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pong_block_a064090394fcfa36c165bd0d44330f7df}\label{class_pong_block_a064090394fcfa36c165bd0d44330f7df}} 
+\index{PongBlock@{PongBlock}!````~PongBlock@{$\sim$PongBlock}}
+\index{````~PongBlock@{$\sim$PongBlock}!PongBlock@{PongBlock}}
+\doxysubsubsection{\texorpdfstring{$\sim$PongBlock()}{~PongBlock()}}
+{\footnotesize\ttfamily Pong\+Block\+::$\sim$\+Pong\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_pong_block_a0969cf1840cceab3a00d3d336c61b3a1}\label{class_pong_block_a0969cf1840cceab3a00d3d336c61b3a1}} 
+\index{PongBlock@{PongBlock}!PongBlock@{PongBlock}}
+\index{PongBlock@{PongBlock}!PongBlock@{PongBlock}}
+\doxysubsubsection{\texorpdfstring{PongBlock()}{PongBlock()}}
+{\footnotesize\ttfamily Pong\+Block\+::\+Pong\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} $\ast$}]{reciever }\end{DoxyParamCaption})}
+
+
+
+Pongblock\textquotesingle{}s constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reciever} & A pointer to the board who will recieve the pongblock. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pong_block_ab3ca4cc23879da079a15d98955eb0870}\label{class_pong_block_ab3ca4cc23879da079a15d98955eb0870}} 
+\index{PongBlock@{PongBlock}!apply@{apply}}
+\index{apply@{apply}!PongBlock@{PongBlock}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily void Pong\+Block\+::apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} $\ast$}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Spawns a pongblock on a board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & A pointer to the board on which the pongblock is to be spawned. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_power_up_a1518dd6128c24037a04788255927aa6a}{Power\+Up}}.
+
+\mbox{\Hypertarget{class_pong_block_a5a7051adb0451892e71307250767c6c0}\label{class_pong_block_a5a7051adb0451892e71307250767c6c0}} 
+\index{PongBlock@{PongBlock}!move@{move}}
+\index{move@{move}!PongBlock@{PongBlock}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Pong\+Block\+::move (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{direction }\end{DoxyParamCaption})}
+
+
+
+Handles pongblocks movement and collision handling. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & A string describing in which direction the ponblock is going. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pong_block_a98d6136d195f85a5af2f55e876cbf007}\label{class_pong_block_a98d6136d195f85a5af2f55e876cbf007}} 
+\index{PongBlock@{PongBlock}!willLand@{willLand}}
+\index{willLand@{willLand}!PongBlock@{PongBlock}}
+\doxysubsubsection{\texorpdfstring{willLand()}{willLand()}}
+{\footnotesize\ttfamily bool Pong\+Block\+::will\+Land (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the pong\+Block will land the next tick. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_block_adce1003b61e6a5efca5113b29c7ed921}{Block}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_pong_block_afefa4d564298087675087819980e7c26}\label{class_pong_block_afefa4d564298087675087819980e7c26}} 
+\index{PongBlock@{PongBlock}!direction@{direction}}
+\index{direction@{direction}!PongBlock@{PongBlock}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily std\+::string Pong\+Block\+::direction}
+
+
+
+A string in the format \char`\"{}\+BD\char`\"{}, where B is the board the pongblock is on (L or R) and D is the direction it\textquotesingle{}s going (L or R). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_pong_block_8h}{Pong\+Block.\+h}}\item 
+\mbox{\hyperlink{_pong_block_8cc}{Pong\+Block.\+cc}}\end{DoxyCompactItemize}

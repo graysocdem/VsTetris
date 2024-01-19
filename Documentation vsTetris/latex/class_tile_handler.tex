@@ -1,0 +1,224 @@
+\hypertarget{class_tile_handler}{}\doxysection{Tile\+Handler Class Reference}
+\label{class_tile_handler}\index{TileHandler@{TileHandler}}
+
+
+Class responsible for storing, drawing and removing tiles.  
+
+
+
+
+{\ttfamily \#include $<$Tile\+Handler.\+h$>$}
+
+
+
+Inheritance diagram for Tile\+Handler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_tile_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tile\+Handler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_tile_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tile_handler_a6b7af049b982dcc6e3cf62d862401224}{$\sim$\+Tile\+Handler}} ()
+\item 
+\mbox{\hyperlink{class_tile_handler_a06bda425ba8909867eee4f261b132270}{Tile\+Handler}} (const int id, const float x\+Offset, const float y\+Offset)
+\begin{DoxyCompactList}\small\item\em Constructor that instatiates a \mbox{\hyperlink{class_block_handler}{Block\+Handler}} object with associated id and coordinate offset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_handler_ab1c47ae43666872bee43569b488d4b39}{update}} ()
+\begin{DoxyCompactList}\small\item\em Function that calls the instatiated \mbox{\hyperlink{class_block_handler}{Block\+Handler}} object functions update method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_handler_abd12f61b9f73e9b077e6b0c6e3e5c7f7}{move}} (string move\+Input)
+\begin{DoxyCompactList}\small\item\em Function that calls the instatiated \mbox{\hyperlink{class_block_handler}{Block\+Handler}} object functions user\+Move method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_handler_aea7becd42b756c77cf81888e3d00ce0a}{draw}} (sf\+::\+Render\+Target \&window, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Function for key inputs that handles movement and powerup usage. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_tile}{Tile}} $\ast$ $>$ \mbox{\hyperlink{class_tile_handler_a8e3e568569a7ec425d9b472cd0e9ff87}{get\+Tiles}} ()
+\begin{DoxyCompactList}\small\item\em Returns private vector variable that contains tile pointers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_handler_aec7a7b0fd450c7dcdcff4f959a9fa34e}{append\+Tile}} (\mbox{\hyperlink{class_tile}{Tile}} $\ast$tile)
+\begin{DoxyCompactList}\small\item\em Inserts tile pointers into the private vector variable tiles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_handler_adc916a656f3a8ca3fac99a84ff1d4c3e}{clear\+Row}} ()
+\begin{DoxyCompactList}\small\item\em Functions that handles the algorithm for clearing the board of tiles when full, also responsible for incrementing private variable point\+Count with 1 for every row cleared. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_tile_handler_a77a06fe050003b26b8e57ed55b583805}{get\+Point\+Count}} ()
+\begin{DoxyCompactList}\small\item\em returns private integer variable pointscleared. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_handler_a106d3badf06c8a7d67ea2902912e2191}{set\+Points\+Cleared}} (int value)
+\begin{DoxyCompactList}\small\item\em Sets private variable points\+Cleared to given inparameter integer value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_block_handler}{Block\+Handler}} $\ast$ \mbox{\hyperlink{class_tile_handler_ad68a8a489543d01bed7008fde566b645}{get\+Block\+Handler}} () const
+\begin{DoxyCompactList}\small\item\em retuns a pointer to \mbox{\hyperlink{class_block_handler}{Block\+Handler}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_block_handler}{Block\+Handler}} $\ast$ \mbox{\hyperlink{class_tile_handler_a7272d233d936138575da141b98c7a72c}{block\+Handler}}
+\begin{DoxyCompactList}\small\item\em Private pointer variable for \mbox{\hyperlink{class_block_handler}{Block\+Handler}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for storing, drawing and removing tiles. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tile_handler_a6b7af049b982dcc6e3cf62d862401224}\label{class_tile_handler_a6b7af049b982dcc6e3cf62d862401224}} 
+\index{TileHandler@{TileHandler}!````~TileHandler@{$\sim$TileHandler}}
+\index{````~TileHandler@{$\sim$TileHandler}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{$\sim$TileHandler()}{~TileHandler()}}
+{\footnotesize\ttfamily Tile\+Handler\+::$\sim$\+Tile\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tile_handler_a06bda425ba8909867eee4f261b132270}\label{class_tile_handler_a06bda425ba8909867eee4f261b132270}} 
+\index{TileHandler@{TileHandler}!TileHandler@{TileHandler}}
+\index{TileHandler@{TileHandler}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{TileHandler()}{TileHandler()}}
+{\footnotesize\ttfamily Tile\+Handler\+::\+Tile\+Handler (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const float}]{x\+Offset,  }\item[{const float}]{y\+Offset }\end{DoxyParamCaption})}
+
+
+
+Constructor that instatiates a \mbox{\hyperlink{class_block_handler}{Block\+Handler}} object with associated id and coordinate offset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id,Id} & number as integer \\
+\hline
+{\em x\+Offset,x} & pixel coordinate offset as integer. \\
+\hline
+{\em y\+Offset,y} & pixel coordinate offset as integer. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tile_handler_aec7a7b0fd450c7dcdcff4f959a9fa34e}\label{class_tile_handler_aec7a7b0fd450c7dcdcff4f959a9fa34e}} 
+\index{TileHandler@{TileHandler}!appendTile@{appendTile}}
+\index{appendTile@{appendTile}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{appendTile()}{appendTile()}}
+{\footnotesize\ttfamily void Tile\+Handler\+::append\+Tile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tile}{Tile}} $\ast$}]{tile }\end{DoxyParamCaption})}
+
+
+
+Inserts tile pointers into the private vector variable tiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile,tile} & pointer variable. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_handler_adc916a656f3a8ca3fac99a84ff1d4c3e}\label{class_tile_handler_adc916a656f3a8ca3fac99a84ff1d4c3e}} 
+\index{TileHandler@{TileHandler}!clearRow@{clearRow}}
+\index{clearRow@{clearRow}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{clearRow()}{clearRow()}}
+{\footnotesize\ttfamily void Tile\+Handler\+::clear\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Functions that handles the algorithm for clearing the board of tiles when full, also responsible for incrementing private variable point\+Count with 1 for every row cleared. 
+
+\mbox{\Hypertarget{class_tile_handler_aea7becd42b756c77cf81888e3d00ce0a}\label{class_tile_handler_aea7becd42b756c77cf81888e3d00ce0a}} 
+\index{TileHandler@{TileHandler}!draw@{draw}}
+\index{draw@{draw}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Tile\+Handler\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{window,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const}
+
+
+
+Function for key inputs that handles movement and powerup usage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \&left\+Time,Variable} & that refrences left\+Board\textquotesingle{}s clock a sf\+::clock that is used to control the time intervall between inputs. \\
+\hline
+{\em \&right\+Time,Variable} & that refrences to the adress of a sf\+::clock that is used to control the time intervall between inputs. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_handler_ad68a8a489543d01bed7008fde566b645}\label{class_tile_handler_ad68a8a489543d01bed7008fde566b645}} 
+\index{TileHandler@{TileHandler}!getBlockHandler@{getBlockHandler}}
+\index{getBlockHandler@{getBlockHandler}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{getBlockHandler()}{getBlockHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_block_handler}{Block\+Handler}} $\ast$ Tile\+Handler\+::get\+Block\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+retuns a pointer to \mbox{\hyperlink{class_block_handler}{Block\+Handler}} object. 
+
+\mbox{\Hypertarget{class_tile_handler_a77a06fe050003b26b8e57ed55b583805}\label{class_tile_handler_a77a06fe050003b26b8e57ed55b583805}} 
+\index{TileHandler@{TileHandler}!getPointCount@{getPointCount}}
+\index{getPointCount@{getPointCount}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{getPointCount()}{getPointCount()}}
+{\footnotesize\ttfamily int Tile\+Handler\+::get\+Point\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns private integer variable pointscleared. 
+
+\mbox{\Hypertarget{class_tile_handler_a8e3e568569a7ec425d9b472cd0e9ff87}\label{class_tile_handler_a8e3e568569a7ec425d9b472cd0e9ff87}} 
+\index{TileHandler@{TileHandler}!getTiles@{getTiles}}
+\index{getTiles@{getTiles}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{getTiles()}{getTiles()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_tile}{Tile}} $\ast$ $>$ Tile\+Handler\+::get\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns private vector variable that contains tile pointers. 
+
+\mbox{\Hypertarget{class_tile_handler_abd12f61b9f73e9b077e6b0c6e3e5c7f7}\label{class_tile_handler_abd12f61b9f73e9b077e6b0c6e3e5c7f7}} 
+\index{TileHandler@{TileHandler}!move@{move}}
+\index{move@{move}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Tile\+Handler\+::move (\begin{DoxyParamCaption}\item[{string}]{move\+Input }\end{DoxyParamCaption})}
+
+
+
+Function that calls the instatiated \mbox{\hyperlink{class_block_handler}{Block\+Handler}} object functions user\+Move method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move\+Input,A} & two char string that symbolise boardside,movedirection. leftboard , left key input = LL. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_handler_a106d3badf06c8a7d67ea2902912e2191}\label{class_tile_handler_a106d3badf06c8a7d67ea2902912e2191}} 
+\index{TileHandler@{TileHandler}!setPointsCleared@{setPointsCleared}}
+\index{setPointsCleared@{setPointsCleared}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{setPointsCleared()}{setPointsCleared()}}
+{\footnotesize\ttfamily void Tile\+Handler\+::set\+Points\+Cleared (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets private variable points\+Cleared to given inparameter integer value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value,intgeger} & variable to set points\+Cleared to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tile_handler_ab1c47ae43666872bee43569b488d4b39}\label{class_tile_handler_ab1c47ae43666872bee43569b488d4b39}} 
+\index{TileHandler@{TileHandler}!update@{update}}
+\index{update@{update}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Tile\+Handler\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that calls the instatiated \mbox{\hyperlink{class_block_handler}{Block\+Handler}} object functions update method. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tile_handler_a7272d233d936138575da141b98c7a72c}\label{class_tile_handler_a7272d233d936138575da141b98c7a72c}} 
+\index{TileHandler@{TileHandler}!blockHandler@{blockHandler}}
+\index{blockHandler@{blockHandler}!TileHandler@{TileHandler}}
+\doxysubsubsection{\texorpdfstring{blockHandler}{blockHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_block_handler}{Block\+Handler}}$\ast$ Tile\+Handler\+::block\+Handler\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Private pointer variable for \mbox{\hyperlink{class_block_handler}{Block\+Handler}}. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_tile_handler_8h}{Tile\+Handler.\+h}}\item 
+\mbox{\hyperlink{_tile_handler_8cc}{Tile\+Handler.\+cc}}\end{DoxyCompactItemize}

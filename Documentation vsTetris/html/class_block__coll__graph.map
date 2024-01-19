@@ -1,0 +1,7 @@
+<map id="Block" name="Block">
+<area shape="rect" id="node1" title="Class responsible for handling falling blocks collision, position and movement." alt="" coords="5,916,213,1176"/>
+<area shape="rect" id="node2" title=" " alt="" coords="18,674,134,714"/>
+<area shape="rect" id="node3" href="$class_tile_handler.html" title="Class responsible for storing, drawing and removing tiles." alt="" coords="159,535,380,853"/>
+<area shape="rect" id="node4" title=" " alt="" coords="189,5,289,45"/>
+<area shape="rect" id="node5" href="$class_block_handler.html" title="Class responsible for handling a board&#39;s blocks&#39; generation, deletion and drawing." alt="" coords="260,95,471,472"/>
+</map>

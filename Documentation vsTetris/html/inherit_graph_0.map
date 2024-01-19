@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_block.html" title="Class responsible for handling falling blocks collision, position and movement." alt="" coords="16,5,71,31"/>
+<area shape="rect" id="node2" href="$class_pong_block.html" title="A PowerUp inheriting both from PowerUp and Block which represents a block bouncing diagonally across ..." alt="" coords="139,5,224,31"/>
+<area shape="rect" id="node3" href="$class_power_up.html" title="Parent class with solepurpose of containing a true virtual function that children classes have to ove..." alt="" coords="5,79,81,104"/>
+<area shape="rect" id="node4" href="$class_reduce_speed.html" title="Class with it&#39;s own apply function meant to decrement a boards tickspeed." alt="" coords="129,55,233,80"/>
+<area shape="rect" id="node5" href="$class_super_charge.html" title="Class with it&#39;s own apply function meant to increment a boards tickspeed." alt="" coords="132,104,231,129"/>
+<area shape="rect" id="node6" href="$class_tile_mover.html" title="Parent class responsible for randomising numbers." alt="" coords="142,153,221,179"/>
+<area shape="rect" id="node7" href="$class_column_swap.html" title="Child class to powerup inheriting." alt="" coords="281,128,381,153"/>
+<area shape="rect" id="node8" href="$class_row_swap.html" title="Child class to Tilemover responsible for swapping tile rows." alt="" coords="290,177,373,203"/>
+</map>

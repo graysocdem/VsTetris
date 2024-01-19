@@ -1,0 +1,230 @@
+\hypertarget{class_block_handler}{}\doxysection{Block\+Handler Class Reference}
+\label{class_block_handler}\index{BlockHandler@{BlockHandler}}
+
+
+Class responsible for handling a board\textquotesingle{}s blocks\textquotesingle{} generation, deletion and drawing.  
+
+
+
+
+{\ttfamily \#include $<$Block\+Handler.\+h$>$}
+
+
+
+Inheritance diagram for Block\+Handler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{class_block_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Block\+Handler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{class_block_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_block_handler_a165cdd30f4e3d6e35223f89327bc09d5}{$\sim$\+Block\+Handler}} ()
+\item 
+\mbox{\hyperlink{class_block_handler_a4b38f20c7fe299d20d5bd3fa4153b68d}{Block\+Handler}} (const int id, const int x\+Off, const int y\+Off, \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} $\ast$tile\+Handler\+In)
+\begin{DoxyCompactList}\small\item\em Blockhandler\textquotesingle{}s constructor, called by \mbox{\hyperlink{class_board}{Board}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_block_handler_a8940e1c4ce95020f055e2148827fc688}{generate\+Block}} ()
+\begin{DoxyCompactList}\small\item\em Generates a new, random block and places it around the middle of the board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_block_handler_a44fe32563caa574d3e7842715080971f}{load\+Blocks}} ()
+\begin{DoxyCompactList}\small\item\em Loads block blueprients from a text file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_block_handler_a036b12acc7100a582270972262bd4b99}{user\+Move}} (string const \&direction)
+\begin{DoxyCompactList}\small\item\em Handles user move inputs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_block_handler_acc8a73a0cdfe002c7f7cce5855a83ef3}{draw}} (sf\+::\+Render\+Target \&window, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Function for key inputs that handles movement and powerup usage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_block_handler_ad00a6cfdb436a948e3c523266b117cd3}{update}} ()
+\begin{DoxyCompactList}\small\item\em Represents a tick. Calls the appropriate move functions depending on the board-\/state, and also generates and destroys entities as needed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_block_handler_a25821dc60e142f6ac7d34517fcee471d}{transfer\+Blocks}} (\mbox{\hyperlink{class_block}{Block}} $\ast$block)
+\begin{DoxyCompactList}\small\item\em Transfers all tile pointers in a block to tilehandler\textquotesingle{}s tiles list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_block_handler_aa39ede94bb06e185b5accb2ef52f72e9}{delete\+Block}} (\mbox{\hyperlink{class_block}{Block}} $\ast$block)
+\begin{DoxyCompactList}\small\item\em Deletes a block. Note that it does not call delete on the pointers. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_tile}{Tile}} $\ast$ $>$ \mbox{\hyperlink{class_block_handler_acefb4f485132b3cb0909a94f0fe9e559}{get\+Current\+Block\+Tiles}} ()
+\begin{DoxyCompactList}\small\item\em Fetches current\+Block\textquotesingle{}s tiles list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_block_handler_a71260d7e49ea8f812cd3d4e833f6d639}{set\+Pong\+Block}} (\mbox{\hyperlink{class_pong_block}{Pong\+Block}} $\ast$pong\+Block)
+\begin{DoxyCompactList}\small\item\em Sets the pong\+Block member pointer to the adress of the newly created pongblock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_block_handler_abe9f0cadc23db79084548afcb1312a27}{has\+Lost}} (int id) const
+\begin{DoxyCompactList}\small\item\em Ends the game and prints a win/loss message to the terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for handling a board\textquotesingle{}s blocks\textquotesingle{} generation, deletion and drawing. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_block_handler_a165cdd30f4e3d6e35223f89327bc09d5}\label{class_block_handler_a165cdd30f4e3d6e35223f89327bc09d5}} 
+\index{BlockHandler@{BlockHandler}!````~BlockHandler@{$\sim$BlockHandler}}
+\index{````~BlockHandler@{$\sim$BlockHandler}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{$\sim$BlockHandler()}{~BlockHandler()}}
+{\footnotesize\ttfamily Block\+Handler\+::$\sim$\+Block\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_block_handler_a4b38f20c7fe299d20d5bd3fa4153b68d}\label{class_block_handler_a4b38f20c7fe299d20d5bd3fa4153b68d}} 
+\index{BlockHandler@{BlockHandler}!BlockHandler@{BlockHandler}}
+\index{BlockHandler@{BlockHandler}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{BlockHandler()}{BlockHandler()}}
+{\footnotesize\ttfamily Block\+Handler\+::\+Block\+Handler (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const int}]{x\+Off,  }\item[{const int}]{y\+Off,  }\item[{\mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} $\ast$}]{tile\+Handler\+In }\end{DoxyParamCaption})}
+
+
+
+Blockhandler\textquotesingle{}s constructor, called by \mbox{\hyperlink{class_board}{Board}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Blockhandler\textquotesingle{}s ID, used for identifying the board i.\+e in the \mbox{\hyperlink{class_game}{Game}} Over-\/message. \\
+\hline
+{\em x\+Off} & The x-\/offset in pixels, represents the gap between the screen border and the \mbox{\hyperlink{class_board}{Board}} border. \\
+\hline
+{\em y\+Off} & The y-\/offset in pixels, represents the gap between the top screen border and the \mbox{\hyperlink{class_board}{Board}}\textquotesingle{}s top. \\
+\hline
+{\em Tile\+Handler\+In} & The tilehandler associated to this blockhandler. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_block_handler_aa39ede94bb06e185b5accb2ef52f72e9}\label{class_block_handler_aa39ede94bb06e185b5accb2ef52f72e9}} 
+\index{BlockHandler@{BlockHandler}!deleteBlock@{deleteBlock}}
+\index{deleteBlock@{deleteBlock}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{deleteBlock()}{deleteBlock()}}
+{\footnotesize\ttfamily void Block\+Handler\+::delete\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_block}{Block}} $\ast$}]{block }\end{DoxyParamCaption})}
+
+
+
+Deletes a block. Note that it does not call delete on the pointers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A pointer to the block which is to be deleted. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_handler_acc8a73a0cdfe002c7f7cce5855a83ef3}\label{class_block_handler_acc8a73a0cdfe002c7f7cce5855a83ef3}} 
+\index{BlockHandler@{BlockHandler}!draw@{draw}}
+\index{draw@{draw}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Block\+Handler\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{window,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const}
+
+
+
+Function for key inputs that handles movement and powerup usage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \&left\+Time,Variable} & that refrences left\+Board\textquotesingle{}s clock a sf\+::clock that is used to control the time intervall between inputs. \\
+\hline
+{\em \&right\+Time,Variable} & that refrences to the adress of a sf\+::clock that is used to control the time intervall between inputs. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_handler_a8940e1c4ce95020f055e2148827fc688}\label{class_block_handler_a8940e1c4ce95020f055e2148827fc688}} 
+\index{BlockHandler@{BlockHandler}!generateBlock@{generateBlock}}
+\index{generateBlock@{generateBlock}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{generateBlock()}{generateBlock()}}
+{\footnotesize\ttfamily void Block\+Handler\+::generate\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates a new, random block and places it around the middle of the board. 
+
+\mbox{\Hypertarget{class_block_handler_acefb4f485132b3cb0909a94f0fe9e559}\label{class_block_handler_acefb4f485132b3cb0909a94f0fe9e559}} 
+\index{BlockHandler@{BlockHandler}!getCurrentBlockTiles@{getCurrentBlockTiles}}
+\index{getCurrentBlockTiles@{getCurrentBlockTiles}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{getCurrentBlockTiles()}{getCurrentBlockTiles()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_tile}{Tile}} $\ast$ $>$ Block\+Handler\+::get\+Current\+Block\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fetches current\+Block\textquotesingle{}s tiles list. 
+
+\mbox{\Hypertarget{class_block_handler_abe9f0cadc23db79084548afcb1312a27}\label{class_block_handler_abe9f0cadc23db79084548afcb1312a27}} 
+\index{BlockHandler@{BlockHandler}!hasLost@{hasLost}}
+\index{hasLost@{hasLost}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{hasLost()}{hasLost()}}
+{\footnotesize\ttfamily void Block\+Handler\+::has\+Lost (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+
+
+Ends the game and prints a win/loss message to the terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the board (player) who lost. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_handler_a44fe32563caa574d3e7842715080971f}\label{class_block_handler_a44fe32563caa574d3e7842715080971f}} 
+\index{BlockHandler@{BlockHandler}!loadBlocks@{loadBlocks}}
+\index{loadBlocks@{loadBlocks}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{loadBlocks()}{loadBlocks()}}
+{\footnotesize\ttfamily void Block\+Handler\+::load\+Blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads block blueprients from a text file. 
+
+\mbox{\Hypertarget{class_block_handler_a71260d7e49ea8f812cd3d4e833f6d639}\label{class_block_handler_a71260d7e49ea8f812cd3d4e833f6d639}} 
+\index{BlockHandler@{BlockHandler}!setPongBlock@{setPongBlock}}
+\index{setPongBlock@{setPongBlock}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{setPongBlock()}{setPongBlock()}}
+{\footnotesize\ttfamily void Block\+Handler\+::set\+Pong\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pong_block}{Pong\+Block}} $\ast$}]{pong\+Block }\end{DoxyParamCaption})}
+
+
+
+Sets the pong\+Block member pointer to the adress of the newly created pongblock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pong\+Block} & A pointer to the pongblock which is to be set in blockhandler. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_handler_a25821dc60e142f6ac7d34517fcee471d}\label{class_block_handler_a25821dc60e142f6ac7d34517fcee471d}} 
+\index{BlockHandler@{BlockHandler}!transferBlocks@{transferBlocks}}
+\index{transferBlocks@{transferBlocks}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{transferBlocks()}{transferBlocks()}}
+{\footnotesize\ttfamily void Block\+Handler\+::transfer\+Blocks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_block}{Block}} $\ast$}]{block }\end{DoxyParamCaption})}
+
+
+
+Transfers all tile pointers in a block to tilehandler\textquotesingle{}s tiles list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A pointer to the block whose tiles are to be transfered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_handler_ad00a6cfdb436a948e3c523266b117cd3}\label{class_block_handler_ad00a6cfdb436a948e3c523266b117cd3}} 
+\index{BlockHandler@{BlockHandler}!update@{update}}
+\index{update@{update}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Block\+Handler\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Represents a tick. Calls the appropriate move functions depending on the board-\/state, and also generates and destroys entities as needed. 
+
+\mbox{\Hypertarget{class_block_handler_a036b12acc7100a582270972262bd4b99}\label{class_block_handler_a036b12acc7100a582270972262bd4b99}} 
+\index{BlockHandler@{BlockHandler}!userMove@{userMove}}
+\index{userMove@{userMove}!BlockHandler@{BlockHandler}}
+\doxysubsubsection{\texorpdfstring{userMove()}{userMove()}}
+{\footnotesize\ttfamily void Block\+Handler\+::user\+Move (\begin{DoxyParamCaption}\item[{string const \&}]{direction }\end{DoxyParamCaption})}
+
+
+
+Handles user move inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & A two-\/character string in the format \char`\"{}\+BD\char`\"{} where B is the board ((L)eft or (R)ight) and D is which direction ((L)eft, (R)ight or (D)own). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_block_handler_8h}{Block\+Handler.\+h}}\item 
+\mbox{\hyperlink{_block_handler_8cc}{Block\+Handler.\+cc}}\end{DoxyCompactItemize}

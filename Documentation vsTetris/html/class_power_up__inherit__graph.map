@@ -1,0 +1,9 @@
+<map id="PowerUp" name="PowerUp">
+<area shape="rect" id="node1" title="Parent class with solepurpose of containing a true virtual function that children classes have to ove..." alt="" coords="354,5,503,104"/>
+<area shape="rect" id="node2" href="$class_pong_block.html" title="A PowerUp inheriting both from PowerUp and Block which represents a block bouncing diagonally across ..." alt="" coords="5,167,204,324"/>
+<area shape="rect" id="node3" href="$class_reduce_speed.html" title="Class with it&#39;s own apply function meant to decrement a boards tickspeed." alt="" coords="229,203,418,287"/>
+<area shape="rect" id="node4" href="$class_super_charge.html" title="Class with it&#39;s own apply function meant to increment a boards tickspeed." alt="" coords="443,203,625,287"/>
+<area shape="rect" id="node5" href="$class_tile_mover.html" title="Parent class responsible for randomising numbers." alt="" coords="649,152,851,339"/>
+<area shape="rect" id="node6" href="$class_column_swap.html" title="Child class to powerup inheriting." alt="" coords="555,387,740,471"/>
+<area shape="rect" id="node7" href="$class_row_swap.html" title="Child class to Tilemover responsible for swapping tile rows." alt="" coords="765,394,941,463"/>
+</map>

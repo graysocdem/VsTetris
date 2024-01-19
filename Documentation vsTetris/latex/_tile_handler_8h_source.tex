@@ -1,0 +1,52 @@
+\hypertarget{_tile_handler_8h_source}{}\doxysection{Tile\+Handler.\+h}
+\mbox{\hyperlink{_tile_handler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef TILEHANDLER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define TILEHANDLER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}../Common/Common.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_tile}{Tile}};}
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_block_handler}{BlockHandler}};}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_tile_handler}{TileHandler}} : \textcolor{keyword}{public} sf::Drawable \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}: }
+\DoxyCodeLine{14     \mbox{\hyperlink{class_tile_handler_a6b7af049b982dcc6e3cf62d862401224}{\string~TileHandler}}();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{22     \mbox{\hyperlink{class_tile_handler}{TileHandler}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keyword}{const} \textcolor{keywordtype}{float} xOffset, \textcolor{keyword}{const} \textcolor{keywordtype}{float} yOffset);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_handler_ab1c47ae43666872bee43569b488d4b39}{update}}();}
+\DoxyCodeLine{28     }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_handler_abd12f61b9f73e9b077e6b0c6e3e5c7f7}{move}}(\textcolor{keywordtype}{string} moveInput);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_handler_aea7becd42b756c77cf81888e3d00ce0a}{draw}}(sf::RenderTarget \&window, sf::RenderStates states) \textcolor{keyword}{const};}
+\DoxyCodeLine{41     }
+\DoxyCodeLine{45     vector<Tile*> \mbox{\hyperlink{class_tile_handler_a8e3e568569a7ec425d9b472cd0e9ff87}{getTiles}}();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_handler_aec7a7b0fd450c7dcdcff4f959a9fa34e}{appendTile}}(\mbox{\hyperlink{class_tile}{Tile}}* tile);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_handler_adc916a656f3a8ca3fac99a84ff1d4c3e}{clearRow}}();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_tile_handler_a77a06fe050003b26b8e57ed55b583805}{getPointCount}}();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_handler_a106d3badf06c8a7d67ea2902912e2191}{setPointsCleared}}(\textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{72     \mbox{\hyperlink{class_block_handler}{BlockHandler}}* \mbox{\hyperlink{class_tile_handler_ad68a8a489543d01bed7008fde566b645}{getBlockHandler}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{79     \mbox{\hyperlink{class_block_handler}{BlockHandler}}* \mbox{\hyperlink{class_tile_handler_a7272d233d936138575da141b98c7a72c}{blockHandler}};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \textcolor{keyword}{private}:}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{86     vector<Tile*> tiles;}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{91     \textcolor{keyword}{const} \textcolor{keywordtype}{int} id;}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{96     \textcolor{keywordtype}{int} pointsCleared;}
+\DoxyCodeLine{97 \};}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

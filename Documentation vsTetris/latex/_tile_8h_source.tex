@@ -1,0 +1,38 @@
+\hypertarget{_tile_8h_source}{}\doxysection{Tile.\+h}
+\mbox{\hyperlink{_tile_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef TILE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define TILE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}../../Common/Common.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_tile}{Tile}} : \textcolor{keyword}{public} sf::Drawable \{}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{16   \mbox{\hyperlink{class_tile}{Tile}}(Texture texture, \textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y);}
+\DoxyCodeLine{17   }
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_ae8b1354babb3ecb189f19d282999582b}{draw}}(sf::RenderTarget \&window, sf::RenderStates states) \textcolor{keyword}{const};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{29   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_a38ad26663b7545c01850d23ed71d2a20}{move}}(std::string \textcolor{keyword}{const}\& direction);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{35   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_aa38e7a1cfccd7c92fc7b74d939cda5c1}{addX}}(\textcolor{keywordtype}{int} x);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{41   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_abf112743f447e4926e0e4aef610b0ca8}{addY}}(\textcolor{keywordtype}{int} y);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_a6defbd720b55a3d12f05499448caccc4}{setX}}(\textcolor{keywordtype}{int} x);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{53   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tile_a642048d08e273c1568db087c0d31f350}{setY}}(\textcolor{keywordtype}{int} y);}
+\DoxyCodeLine{54   }
+\DoxyCodeLine{58   sf::Vector2f \mbox{\hyperlink{class_tile_aaf9f0cf42f7cf88b3dce5039a44e620a}{position}}; \textcolor{comment}{// X-\/position and Y-\/position}}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{keyword}{private}:}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{65   Texture texture;}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{70   Sprite sprite;}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

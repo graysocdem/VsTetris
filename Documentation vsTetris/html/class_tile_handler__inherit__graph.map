@@ -1,0 +1,4 @@
+<map id="TileHandler" name="TileHandler">
+<area shape="rect" id="node1" title="Class responsible for storing, drawing and removing tiles." alt="" coords="5,93,227,427"/>
+<area shape="rect" id="node2" title=" " alt="" coords="66,5,166,45"/>
+</map>

@@ -1,0 +1,203 @@
+\hypertarget{class_block}{}\doxysection{Block Class Reference}
+\label{class_block}\index{Block@{Block}}
+
+
+Class responsible for handling falling blocks collision, position and movement.  
+
+
+
+
+{\ttfamily \#include $<$Block.\+h$>$}
+
+
+
+Inheritance diagram for Block\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_block__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Block\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_block__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_block_a2c2dbcc3efe12ffcbd33b8b4f1440682}{$\sim$\+Block}} ()=default
+\item 
+\mbox{\hyperlink{class_block_a37658a946bf5067ad01d68d9ff086adc}{Block}} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor for Object \mbox{\hyperlink{class_pong_block}{Pong\+Block}} to inherit. ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_block_a7b7240be6487432813238eeb63008323}{Block}} (vector$<$ \mbox{\hyperlink{class_tile}{Tile}} $\ast$ $>$ const \&tiles\+In, \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} $\ast$tile\+Handler\+In)
+\begin{DoxyCompactList}\small\item\em Constructor that that instatiates the right Tile\+Pointers to use in a block. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_block_adce1003b61e6a5efca5113b29c7ed921}{will\+Land}} () const
+\begin{DoxyCompactList}\small\item\em Virtual boolean function that both \mbox{\hyperlink{_block_8cc}{Block.\+cc}} and \mbox{\hyperlink{class_pong_block}{Pong\+Block}} can define. Compares current\+Blcoks position with the board bot coordinate and all the coordinates in Tile\+Handlers tiles displayed on the board. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_block_a9c2d32a4236e77ae64d62d1602cf5ff9}{has\+Overlap}} ()
+\begin{DoxyCompactList}\small\item\em Boolean Function to handle clipping between the current\+Block and all\+Tiles in tile\+Handler by checking if their coordinates are the same. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_block_a7e96b6459cd5e86818ec3b534c574dfc}{move}} (string const \&direction)
+\begin{DoxyCompactList}\small\item\em Virtual function to handle the movement of the current falling block. Controll checks if it collides with either wall or tile and call the \mbox{\hyperlink{class_tile}{Tile}} objects move method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_tile}{Tile}} $\ast$ $>$ \mbox{\hyperlink{class_block_a2b7eb67ce3f0067e757254a6504d8735}{tiles}}
+\begin{DoxyCompactList}\small\item\em Vector variable containing tilepointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_block_ac4b1c1d644099e60c4ec6bee49c3ece0}{will\+Collide\+With\+Tile}} (string const \&move\+Input) const
+\begin{DoxyCompactList}\small\item\em Virtual boolean function that controll checks if the players movement input will result in the tile moving into another tile by checking all the coordinates of tiles in \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_block_a24437ae0e5d22e7b25739cef0ff84f09}{will\+Collide\+With\+Wall}} (string const \&move\+Input) const
+\begin{DoxyCompactList}\small\item\em Virtual boolean function that controll checks if the players movement input will result in the tile moving into a wall. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} $\ast$ \mbox{\hyperlink{class_block_aee64ba83a9d1171969d34f602ac4f836}{tile\+Handler}}
+\begin{DoxyCompactList}\small\item\em Protected pointer variable to \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for handling falling blocks collision, position and movement. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_block_a2c2dbcc3efe12ffcbd33b8b4f1440682}\label{class_block_a2c2dbcc3efe12ffcbd33b8b4f1440682}} 
+\index{Block@{Block}!````~Block@{$\sim$Block}}
+\index{````~Block@{$\sim$Block}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{$\sim$Block()}{~Block()}}
+{\footnotesize\ttfamily Block\+::$\sim$\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_block_a37658a946bf5067ad01d68d9ff086adc}\label{class_block_a37658a946bf5067ad01d68d9ff086adc}} 
+\index{Block@{Block}!Block@{Block}}
+\index{Block@{Block}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{Block()}{Block()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Block\+::\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty constructor for Object \mbox{\hyperlink{class_pong_block}{Pong\+Block}} to inherit. ~\newline
+ 
+
+\mbox{\Hypertarget{class_block_a7b7240be6487432813238eeb63008323}\label{class_block_a7b7240be6487432813238eeb63008323}} 
+\index{Block@{Block}!Block@{Block}}
+\index{Block@{Block}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{Block()}{Block()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Block\+::\+Block (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_tile}{Tile}} $\ast$ $>$ const \&}]{tiles\+In,  }\item[{\mbox{\hyperlink{class_tile_handler}{Tile\+Handler}} $\ast$}]{tile\+Handler\+In }\end{DoxyParamCaption})}
+
+
+
+Constructor that that instatiates the right Tile\+Pointers to use in a block. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tiles\+In} & A vector of tilepointer refrences used to . \\
+\hline
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_block_a9c2d32a4236e77ae64d62d1602cf5ff9}\label{class_block_a9c2d32a4236e77ae64d62d1602cf5ff9}} 
+\index{Block@{Block}!hasOverlap@{hasOverlap}}
+\index{hasOverlap@{hasOverlap}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{hasOverlap()}{hasOverlap()}}
+{\footnotesize\ttfamily bool Block\+::has\+Overlap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Boolean Function to handle clipping between the current\+Block and all\+Tiles in tile\+Handler by checking if their coordinates are the same. 
+
+\mbox{\Hypertarget{class_block_a7e96b6459cd5e86818ec3b534c574dfc}\label{class_block_a7e96b6459cd5e86818ec3b534c574dfc}} 
+\index{Block@{Block}!move@{move}}
+\index{move@{move}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Block\+::move (\begin{DoxyParamCaption}\item[{string const \&}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual function to handle the movement of the current falling block. Controll checks if it collides with either wall or tile and call the \mbox{\hyperlink{class_tile}{Tile}} objects move method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction,A} & two char string that symbolise boardside, movedirection. leftboard , left key input = LL. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_ac4b1c1d644099e60c4ec6bee49c3ece0}\label{class_block_ac4b1c1d644099e60c4ec6bee49c3ece0}} 
+\index{Block@{Block}!willCollideWithTile@{willCollideWithTile}}
+\index{willCollideWithTile@{willCollideWithTile}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{willCollideWithTile()}{willCollideWithTile()}}
+{\footnotesize\ttfamily bool Block\+::will\+Collide\+With\+Tile (\begin{DoxyParamCaption}\item[{string const \&}]{move\+Input }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Virtual boolean function that controll checks if the players movement input will result in the tile moving into another tile by checking all the coordinates of tiles in \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move\+Input,A} & two char string that symbolise boardside, movedirection. leftboard , left key input = LL. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_a24437ae0e5d22e7b25739cef0ff84f09}\label{class_block_a24437ae0e5d22e7b25739cef0ff84f09}} 
+\index{Block@{Block}!willCollideWithWall@{willCollideWithWall}}
+\index{willCollideWithWall@{willCollideWithWall}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{willCollideWithWall()}{willCollideWithWall()}}
+{\footnotesize\ttfamily bool Block\+::will\+Collide\+With\+Wall (\begin{DoxyParamCaption}\item[{string const \&}]{move\+Input }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Virtual boolean function that controll checks if the players movement input will result in the tile moving into a wall. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move\+Input,A} & two char string that symbolise boardside, movedirection. leftboard , left key input = LL. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_adce1003b61e6a5efca5113b29c7ed921}\label{class_block_adce1003b61e6a5efca5113b29c7ed921}} 
+\index{Block@{Block}!willLand@{willLand}}
+\index{willLand@{willLand}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{willLand()}{willLand()}}
+{\footnotesize\ttfamily bool Block\+::will\+Land (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual boolean function that both \mbox{\hyperlink{_block_8cc}{Block.\+cc}} and \mbox{\hyperlink{class_pong_block}{Pong\+Block}} can define. Compares current\+Blcoks position with the board bot coordinate and all the coordinates in Tile\+Handlers tiles displayed on the board. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_pong_block_a98d6136d195f85a5af2f55e876cbf007}{Pong\+Block}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_block_aee64ba83a9d1171969d34f602ac4f836}\label{class_block_aee64ba83a9d1171969d34f602ac4f836}} 
+\index{Block@{Block}!tileHandler@{tileHandler}}
+\index{tileHandler@{tileHandler}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{tileHandler}{tileHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}}$\ast$ Block\+::tile\+Handler\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Protected pointer variable to \mbox{\hyperlink{class_tile_handler}{Tile\+Handler}}. 
+
+\mbox{\Hypertarget{class_block_a2b7eb67ce3f0067e757254a6504d8735}\label{class_block_a2b7eb67ce3f0067e757254a6504d8735}} 
+\index{Block@{Block}!tiles@{tiles}}
+\index{tiles@{tiles}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{tiles}{tiles}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_tile}{Tile}}$\ast$$>$ Block\+::tiles}
+
+
+
+Vector variable containing tilepointers. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_block_8h}{Block.\+h}}\item 
+\mbox{\hyperlink{_block_8cc}{Block.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,55 @@
+\hypertarget{_block_handler_8h_source}{}\doxysection{Block\+Handler.\+h}
+\mbox{\hyperlink{_block_handler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef BLOCKHANDLER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define BLOCKHANDLER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iomanip>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}../Common/Common.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_block}{Block}};}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_tile_handler}{TileHandler}};}
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_board}{Board}};}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_tile}{Tile}};}
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_pong_block}{PongBlock}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_block_handler}{BlockHandler}} : \textcolor{keyword}{public} sf::Drawable \{}
+\DoxyCodeLine{19 \textcolor{keyword}{public}: }
+\DoxyCodeLine{20     \mbox{\hyperlink{class_block_handler_a165cdd30f4e3d6e35223f89327bc09d5}{\string~BlockHandler}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{29     \mbox{\hyperlink{class_block_handler}{BlockHandler}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keyword}{const} \textcolor{keywordtype}{int} xOff, \textcolor{keyword}{const} \textcolor{keywordtype}{int} yOff, \mbox{\hyperlink{class_tile_handler}{TileHandler}}* tileHandlerIn);}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_block_handler_a8940e1c4ce95020f055e2148827fc688}{generateBlock}}();}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_block_handler_a44fe32563caa574d3e7842715080971f}{loadBlocks}}();}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_block_handler_a036b12acc7100a582270972262bd4b99}{userMove}}(\textcolor{keywordtype}{string} \textcolor{keyword}{const}\& direction);}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_block_handler_acc8a73a0cdfe002c7f7cce5855a83ef3}{draw}}(sf::RenderTarget \&window, sf::RenderStates states) \textcolor{keyword}{const};}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_block_handler_ad00a6cfdb436a948e3c523266b117cd3}{update}}();}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_block_handler_a25821dc60e142f6ac7d34517fcee471d}{transferBlocks}}(\mbox{\hyperlink{class_block}{Block}}* block);}
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_block_handler_aa39ede94bb06e185b5accb2ef52f72e9}{deleteBlock}}(\mbox{\hyperlink{class_block}{Block}}* block);}
+\DoxyCodeLine{66     vector<Tile*> \mbox{\hyperlink{class_block_handler_acefb4f485132b3cb0909a94f0fe9e559}{getCurrentBlockTiles}}();}
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_block_handler_a71260d7e49ea8f812cd3d4e833f6d639}{setPongBlock}}(\mbox{\hyperlink{class_pong_block}{PongBlock}}* pongBlock);}
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_block_handler_abe9f0cadc23db79084548afcb1312a27}{hasLost}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}) \textcolor{keyword}{const};}
+\DoxyCodeLine{77 \textcolor{keyword}{private}:    }
+\DoxyCodeLine{78 }
+\DoxyCodeLine{82     \mbox{\hyperlink{class_block}{Block}}* currentBlock;}
+\DoxyCodeLine{86     \mbox{\hyperlink{class_pong_block}{PongBlock}}* pongBlock;}
+\DoxyCodeLine{90     \mbox{\hyperlink{class_tile_handler}{TileHandler}}* tileHandler;}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{95     map<int, vector<pair<int, int>>> blockMap; }
+\DoxyCodeLine{96 }
+\DoxyCodeLine{100     \textcolor{keyword}{const} \textcolor{keywordtype}{int} xOffset;}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{105     \textcolor{keyword}{const} \textcolor{keywordtype}{int} yOffset;}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{110     \textcolor{keyword}{const} \textcolor{keywordtype}{int} tileSide;}
+\DoxyCodeLine{111     }
+\DoxyCodeLine{115     \textcolor{keyword}{const} \textcolor{keywordtype}{int} id;}
+\DoxyCodeLine{116     }
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 \};}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

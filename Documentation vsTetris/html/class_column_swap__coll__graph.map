@@ -1,0 +1,8 @@
+<map id="ColumnSwap" name="ColumnSwap">
+<area shape="rect" id="node1" title="Child class to powerup inheriting." alt="" coords="50,1137,235,1221"/>
+<area shape="rect" id="node2" href="$class_tile_mover.html" title="Parent class responsible for randomising numbers." alt="" coords="42,916,243,1088"/>
+<area shape="rect" id="node3" href="$class_power_up.html" title="Parent class with solepurpose of containing a true virtual function that children classes have to ove..." alt="" coords="5,645,155,743"/>
+<area shape="rect" id="node4" href="$class_tile_handler.html" title="Class responsible for storing, drawing and removing tiles." alt="" coords="179,535,400,853"/>
+<area shape="rect" id="node5" title=" " alt="" coords="183,5,283,45"/>
+<area shape="rect" id="node6" href="$class_block_handler.html" title="Class responsible for handling a board&#39;s blocks&#39; generation, deletion and drawing." alt="" coords="255,95,465,472"/>
+</map>

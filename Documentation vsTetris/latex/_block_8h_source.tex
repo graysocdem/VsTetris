@@ -1,0 +1,40 @@
+\hypertarget{_block_8h_source}{}\doxysection{Block.\+h}
+\mbox{\hyperlink{_block_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef BLOCK\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define BLOCK\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}../../Common/Common.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_tile}{Tile}};}
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_tile_handler}{TileHandler}};}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_block}{Block}} \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}: }
+\DoxyCodeLine{14     \mbox{\hyperlink{class_block_a2c2dbcc3efe12ffcbd33b8b4f1440682}{\string~Block}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     \mbox{\hyperlink{class_block_a37658a946bf5067ad01d68d9ff086adc}{Block}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{26     \mbox{\hyperlink{class_block_a37658a946bf5067ad01d68d9ff086adc}{Block}}(vector<Tile*> \textcolor{keyword}{const}\& tilesIn, \mbox{\hyperlink{class_tile_handler}{TileHandler}}* tileHandlerIn);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{31     vector<Tile*> \mbox{\hyperlink{class_block_a2b7eb67ce3f0067e757254a6504d8735}{tiles}};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{36     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_block_adce1003b61e6a5efca5113b29c7ed921}{willLand}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_block_a9c2d32a4236e77ae64d62d1602cf5ff9}{hasOverlap}}(); }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_block_a7e96b6459cd5e86818ec3b534c574dfc}{move}}(\textcolor{keywordtype}{string} \textcolor{keyword}{const}\& direction);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{55     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_block_ac4b1c1d644099e60c4ec6bee49c3ece0}{willCollideWithTile}}(\textcolor{keywordtype}{string} \textcolor{keyword}{const}\& moveInput) \textcolor{keyword}{const};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_block_a24437ae0e5d22e7b25739cef0ff84f09}{willCollideWithWall}}(\textcolor{keywordtype}{string} \textcolor{keyword}{const}\& moveInput) \textcolor{keyword}{const};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{66     \mbox{\hyperlink{class_tile_handler}{TileHandler}}* \mbox{\hyperlink{class_block_aee64ba83a9d1171969d34f602ac4f836}{tileHandler}};}
+\DoxyCodeLine{67 \};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

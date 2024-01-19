@@ -1,0 +1,27 @@
+\hypertarget{_column_swap_8h_source}{}\doxysection{Column\+Swap.\+h}
+\mbox{\hyperlink{_column_swap_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef COLUMNSWAP\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define COLUMNSWAP\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_tile_mover_8h}{./TileMover.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_column_swap}{ColumnSwap}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_tile_mover}{TileMover}} \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_column_swap_a0fbfab8e256951d3c5d907ed006187ec}{\string~ColumnSwap}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{13     }
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_column_swap_a99a36407ac69c191dcdecee497efc356}{apply}}(\mbox{\hyperlink{class_board}{Board}}* board) \textcolor{keyword}{override}; }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{private}:}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{26     std::vector<int> getColumnVector(\mbox{\hyperlink{class_tile_handler}{TileHandler}}* \mbox{\hyperlink{class_tile_mover_a2b6c0e0ae30b80202fd5072ab9fb6182}{tileHandler}}) \textcolor{keyword}{const};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{32     pair<int, int> setRandom(std::vector<int> columnVector) \textcolor{keyword}{const};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} swap(\mbox{\hyperlink{class_tile_handler}{TileHandler}}* \mbox{\hyperlink{class_tile_mover_a2b6c0e0ae30b80202fd5072ab9fb6182}{tileHandler}}, pair<int, int> columnsGrid);}
+\DoxyCodeLine{40 \};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,14 @@
+<map id="PowerUp.h" name="PowerUp.h">
+<area shape="rect" id="node1" title=" " alt="" coords="176,5,263,31"/>
+<area shape="rect" id="node2" href="$_pong_block_8cc.html" title=" " alt="" coords="5,152,108,177"/>
+<area shape="rect" id="node3" href="$_pong_block_8h.html" title=" " alt="" coords="51,79,147,104"/>
+<area shape="rect" id="node4" href="$_power_up_8cc.html" title=" " alt="" coords="172,79,267,104"/>
+<area shape="rect" id="node5" href="$_reduce_speed_8h.html" title=" " alt="" coords="291,79,406,104"/>
+<area shape="rect" id="node7" href="$_tile_mover_8h.html" title=" " alt="" coords="484,79,573,104"/>
+<area shape="rect" id="node6" href="$_reduce_speed_8cc.html" title=" " alt="" coords="233,152,355,177"/>
+<area shape="rect" id="node8" href="$_column_swap_8h.html" title=" " alt="" coords="380,152,491,177"/>
+<area shape="rect" id="node10" href="$_row_swap_8cc.html" title=" " alt="" coords="540,225,640,251"/>
+<area shape="rect" id="node11" href="$_row_swap_8h.html" title=" " alt="" coords="566,152,659,177"/>
+<area shape="rect" id="node12" href="$_tile_mover_8cc.html" title=" " alt="" coords="683,152,779,177"/>
+<area shape="rect" id="node9" href="$_column_swap_8cc.html" title=" " alt="" coords="376,225,495,251"/>
+</map>

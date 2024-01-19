@@ -1,0 +1,5 @@
+<map id="RowSwap" name="RowSwap">
+<area shape="rect" id="node1" title="Child class to Tilemover responsible for swapping tile rows." alt="" coords="18,387,194,456"/>
+<area shape="rect" id="node2" href="$class_tile_mover.html" title="Parent class responsible for randomising numbers." alt="" coords="5,152,207,339"/>
+<area shape="rect" id="node3" href="$class_power_up.html" title="Parent class with solepurpose of containing a true virtual function that children classes have to ove..." alt="" coords="31,5,181,104"/>
+</map>
